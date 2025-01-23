@@ -1,7 +1,8 @@
 // Importerar CSS för komponenten.
 import '../Footer.css'
 
-function Footer() {
+// Komponenten returnerar en div-container innehållandes en <p>-tagg med brödtext.
+function Footer() {  
   return (
     <div className="footer">
       <p>&copy; Jenny Lind 2025</p>
@@ -9,4 +10,5 @@ function Footer() {
   )
 }
 
+// Exporterar komponenten.
 export default Footer
