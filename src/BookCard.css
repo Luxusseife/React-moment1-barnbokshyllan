@@ -1,0 +1,8 @@
+.bookcard {
+    background-color: #dfcad8;
+    padding: 1rem;
+    border-radius: 25px;
+    max-width: 300px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 8px black;
+}

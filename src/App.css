@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 
-/* Root. */
-#root {
+/* Body, flexad kolumn. */
+body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -18,16 +18,38 @@
 /* Rubriker. Font är Jockey One. */
 h1, h2, h3 {
   font-family: Jockey One, sans-serif;
-  margin: 1rem auto 1.5rem auto;
+  text-align: center;
 }
 
 h1 {
-  text-align: center;
+  background-color: #9f283d;
+  color: #ffffff;
+  font-size: 40px;
+  padding: 1rem 0;
+  letter-spacing: 3px;
+}
+
+h2 {
+  margin: 0 0 2rem 0;
 }
 
 /* Brödtext. Font är Roboto Slab. */
 p {
   font-family: Roboto Slab, sans-serif;
   line-height: 1.75;
-  padding: 1rem;
+}
+
+/* Mediaqueries. */
+@media (min-width: 769px) {
+  /* Ul-listan flexas med row för att visa korten på en rad och wrap utifrån skärmstorlek. */
+  ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+  }
 }
