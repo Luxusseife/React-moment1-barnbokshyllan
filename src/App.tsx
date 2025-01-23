@@ -37,14 +37,6 @@ function App() {
       read: true
     },
     {
-      title: "Viktor Rydbergs Tomten",
-      author: "Viktor Rydberg",
-      illustrator: "Ingrid Elf",
-      publisher: "Tukan Förlag",
-      publicationYear: 2014,
-      read: false
-    },
-    {
       title: "Pelles ficklampa",
       author: "Jan Lööf",
       illustrator: "Jan Lööf",
@@ -60,6 +52,14 @@ function App() {
       publicationYear: 2024,
       read: true
     },
+    {
+      title: "Viktor Rydbergs Tomten",
+      author: "Viktor Rydberg",
+      illustrator: "Ingrid Elf",
+      publisher: "Tukan Förlag",
+      publicationYear: 2014,
+      read: false
+    },
   ]
 
   // Komponenten returnerar ett React-fragment som innehåller komponenterna för header, footer och BookCard.
@@ -67,30 +67,34 @@ function App() {
   return (
     <>
       <Header webtitle={appname} />
-
-      <ul
-        style={{
-          listStyle: "none"
-        }}
-      >
-        {booksArray.map((book, index) => (
-          <li
-            key={index}
-            style={{
-              margin: "3rem 0"
-            }}
-          >
-            <BookCard
-              title={book.title}
-              author={book.author}
-              illustrator={book.illustrator}
-              publisher={book.publisher}
-              publicationYear={book.publicationYear}
-              read={book.read}
-            />
-          </li>
-        ))}
-      </ul>
+      <div className="list">
+        <ul
+          style={{
+            listStyle: "none"
+          }}
+        >
+          {booksArray.map((book, index) => (
+            <li
+              key={index}
+              style={{
+                margin: "3rem 0",
+                backgroundColor: book.read ? "#abc0a1" : "#b4b628", // Om boken är läst, blir bakgrundsfärgen grön, annars gul.
+                borderRadius: "25px",
+                maxWidth: "300px"
+              }}
+            >
+              <BookCard
+                title={book.title}
+                author={book.author}
+                illustrator={book.illustrator}
+                publisher={book.publisher}
+                publicationYear={book.publicationYear}
+                read={book.read}
+              />
+            </li>
+          ))}
+        </ul>
+      </div>
 
       <Footer />
     </>

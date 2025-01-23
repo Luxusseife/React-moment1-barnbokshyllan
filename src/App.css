@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 
 h1 {
-  background-color: #9f283d;
+  background-color: #283816;
   color: #ffffff;
   font-size: 40px;
   padding: 1rem 0;
@@ -31,6 +31,7 @@ h1 {
 
 h2 {
   margin: 0 0 2rem 0;
+  letter-spacing: 1px;
 }
 
 /* Brödtext. Font är Roboto Slab. */
@@ -39,6 +40,11 @@ p {
   line-height: 1.75;
 }
 
+.list {
+  display: flex;
+  justify-content: center;
+} 
+
 /* Mediaqueries. */
 @media (min-width: 769px) {
   /* Ul-listan flexas med row för att visa korten på en rad och wrap utifrån skärmstorlek. */
@@ -46,10 +52,11 @@ p {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 2rem;
+      gap: 5rem;
       justify-content: center;
       align-items: center;
       max-width: 1000px;
       margin: 0 auto;
   }
 }
+
