@@ -1,17 +1,23 @@
 interface BookInfo {
-    author: string,
-    illustrator: string,
-    publisher: string,
-    publicated: number,
-    read: boolean
+  title: string,
+  author: string,
+  illustrator: string,
+  publisher: string,
+  publicationYear: number,
+  read: boolean
 }
 
-function Book({author, illustrator, publisher, publicated, read} : BookInfo) {
-  return (
-    <div>
-      
-    </div>
-  )
+function Book({title, author, illustrator, publisher, publicationYear, read} : BookInfo) {
+return (
+  <section className="bookcard">
+    <h2 className="booktitle">{title}</h2>
+    <p>Författare: {author}</p>
+    <p>Illustratör: {illustrator}</p>
+    <p>Förlag: {publisher}</p>
+    <p>Utgivningsår: {publicationYear}</p>
+    <p>Läst: {read}</p>
+  </section>
+)
 }
 
 export default Book
