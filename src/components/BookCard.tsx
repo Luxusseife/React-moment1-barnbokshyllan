@@ -1,3 +1,4 @@
+// Interface som definerar props för bok-objekt.
 interface BookInfo {
   title: string,
   author: string,
@@ -7,7 +8,9 @@ interface BookInfo {
   read: boolean
 }
 
+// Komponenten tar emot props. Specificerar typerna enligt interfacet.
 function Book({title, author, illustrator, publisher, publicationYear, read} : BookInfo) {
+  // Returnerar en sektion, ett "kort" innehållandes bokinformation.
 return (
   <section className="bookcard">
     <h2 className="booktitle">{title}</h2>
@@ -20,4 +23,5 @@ return (
 )
 }
 
+// Exporterar komponenten.
 export default Book
