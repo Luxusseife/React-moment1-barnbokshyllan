@@ -1,11 +1,33 @@
+/* Import av font: Jockey One och Roboto för rubriker/brödtext. */
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto+Slab:wght@100;400;700&display=swap');
+
 /* Normalisering. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
 
-/* Root (inom body). */
+/* Root. */
 #root {
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Rubriker. Font är Jockey One. */
+h1, h2, h3 {
+  font-family: Jockey One, sans-serif;
+  margin: 1rem auto 1.5rem auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Brödtext. Font är Roboto Slab. */
+p {
+  font-family: Roboto Slab, sans-serif;
+  line-height: 1.75;
+  padding: 1rem;
 }
