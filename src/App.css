@@ -1,0 +1,11 @@
+/* Normalisering. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+/* Root (inom body). */
+#root {
+  padding: 2rem;
+}
