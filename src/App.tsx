@@ -101,10 +101,8 @@ function App() {
             <li
               key={index}
               style={{
-                margin: "3rem 0",
                 backgroundColor: book.read ? "#abc0a1" : "#b4b628", // Om boken är läst, blir bakgrundsfärgen grön, annars gul.
-                borderRadius: "25px",
-                maxWidth: "300px"
+                borderRadius: "25px"
               }}
             >
               <BookCard
