@@ -13,20 +13,20 @@ function App() {
   // Array med bok-objekt.
   const booksArray = [
     {
-      title: "Vem spökar, Alfons Åberg?",
-      author: "Gunilla Bergström",
-      illustrator: "Gunilla Bergström",
-      publisher: "Rabén & Sjögren",
-      publicationYear: 1983,
-      read: false
-    },
-    {
       title: "Apor bananer storm och orkaner",
       author: "Grethe Rollböll",
       illustrator: "Anna-Karin Garhamn",
       publisher: "Rabén & Sjögren",
       publicationYear: 2021,
       read: true
+    },
+    {
+      title: "Vem spökar, Alfons Åberg?",
+      author: "Gunilla Bergström",
+      illustrator: "Gunilla Bergström",
+      publisher: "Rabén & Sjögren",
+      publicationYear: 1983,
+      read: false
     },
     {
       title: "Hästfesten",
@@ -45,6 +45,14 @@ function App() {
       read: true
     },
     {
+      title: "Viktor Rydbergs Tomten",
+      author: "Viktor Rydberg",
+      illustrator: "Ingrid Elf",
+      publisher: "Tukan Förlag",
+      publicationYear: 2014,
+      read: false
+    },
+    {
       title: "När dinosaurierna kom tillbaka",
       author: "David Henson",
       illustrator: "David Henson",
@@ -53,13 +61,29 @@ function App() {
       read: true
     },
     {
-      title: "Viktor Rydbergs Tomten",
-      author: "Viktor Rydberg",
-      illustrator: "Ingrid Elf",
-      publisher: "Tukan Förlag",
-      publicationYear: 2014,
+      title: "Bojan och polisbilen",
+      author: "Johan Anderblad, Filippa Widlund",
+      illustrator: "Filippa Widlund",
+      publisher: "Bonniers Carlsen",
+      publicationYear: 2018,
+      read: true
+    },
+    {
+      title: "Ocke, Nutta och Pillerill",
+      author: "Elsa Beskow",
+      illustrator: "Elsa Beskow",
+      publisher: "Bonniers juniorförlag",
+      publicationYear: 1983,
       read: false
     },
+    {
+      title: "Julia äter allt",
+      author: "Eva Eriksson, Lisa Moroni",
+      illustrator: "Lisa Moroni, Eva Eriksson",
+      publisher: "Bonnier Carlsen",
+      publicationYear: 2016,
+      read: true
+    }
   ]
 
   // Komponenten returnerar ett React-fragment som innehåller komponenterna för header, footer och BookCard.

@@ -1,6 +1,7 @@
 .bookcard {
-    padding: 1rem;
+    padding: 1.5rem;
     border-radius: 25px;
-    margin: 0 auto;
+    width: 275px;
+    height: 325px;
     box-shadow: 2px 2px 8px black;
 }

@@ -40,23 +40,43 @@ p {
   line-height: 1.75;
 }
 
+/* Bok-kortslistan. */
 .list {
   display: flex;
   justify-content: center;
 } 
 
+ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Mediaqueries. */
 @media (min-width: 769px) {
-  /* Ul-listan flexas med row för att visa korten på en rad och wrap utifrån skärmstorlek. */
+  /* Bok-kortslistan flexas med row för att visa korten på en rad och wrap utifrån skärmstorlek. */
   ul {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 5rem;
+      gap: 3rem;
       justify-content: center;
       align-items: center;
-      max-width: 1000px;
       margin: 0 auto;
   }
 }
 
+@media (min-width: 1500px) {
+  /* Listans max-width ökas. */
+  ul {
+      max-width: 1500px;
+  }
+}
+
+@media (min-width: 1800px) {
+  /* Listans max-width ökas. */
+  ul {
+      max-width: 1800px;
+  }
+}
