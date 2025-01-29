@@ -10,11 +10,11 @@
     font-weight: bold;
 }
 
-footer a {
+footer p a {
     color: white;
 }
 
-footer a:hover {
+footer p a:hover {
     color: white;
     text-decoration: none;
 }
