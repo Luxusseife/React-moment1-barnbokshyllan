@@ -5,7 +5,7 @@ import '../Footer.css'
 function Footer() {  
   return (
     <div className="footer">
-      <p>Bannerbild hämtad från <a href="https://pixabay.com/sv/">Pixabay</a> | &copy; Jenny Lind 2025</p>
+      <p>&copy; Jenny Lind 2025  | Bannerbild hämtad från <a href="https://pixabay.com/sv/">Pixabay</a></p>
     </div>
   )
 }
